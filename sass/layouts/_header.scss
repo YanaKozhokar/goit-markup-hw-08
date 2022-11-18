@@ -1,0 +1,88 @@
+.header {
+  background-color: $background-color-white;
+  border-bottom: 1px solid $header-border;
+}
+
+.header {
+  .container {
+    display: flex;
+  }
+}
+
+.header {
+  .logo-studio {
+    color: $header-logo-color;
+  }
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  background-color: $background-color-white;
+}
+
+.header__nav-list {
+  margin-left: 93px;
+  display: flex;
+  gap: 50px;
+}
+
+.header__nav-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $title-color;
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.header__nav-current {
+  position: relative;
+}
+
+.current {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $color-accent;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -33px;
+    right: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: $color-accent;
+    border-radius: 2px;
+  }
+}
+
+.header__contacts {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header__contacts-email,
+.header__contacts-phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $primary-text-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.header__email-icon,
+.header__phone-icon {
+  fill: currentColor;
+}

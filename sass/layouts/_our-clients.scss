@@ -1,0 +1,32 @@
+.clients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: $title-color;
+}
+
+.clients__companies {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+
+.clients__companies-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $icon-fill;
+  border-radius: 4px;
+  fill: $icon-fill;
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $color-accent;
+    border: 1px solid $color-accent;
+  }
+}
