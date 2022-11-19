@@ -494,18 +494,25 @@ body {
 }
 
 .advantages__title {
-  margin-top: 30px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.16;
+  line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
+  margin-top: 30px;
   color: #212121;
+}
+@media screen and (min-width: 768px) {
+  .advantages__title {
+    text-align: start;
+  }
 }
 
 .advantages__paragraph {
-  margin-top: 10px;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
+  margin-top: 10px;
 }
 
 .services.section {
