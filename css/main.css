@@ -429,7 +429,7 @@ body {
 }
 
 .hero__title {
-  max-width: 696px;
+  max-width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -444,6 +444,7 @@ body {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
+    max-width: 696px;
   }
 }
 
