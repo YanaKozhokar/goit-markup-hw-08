@@ -93,7 +93,7 @@
     <main>
       <section class="hero section">
         <div class="container">
-          <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
@@ -107,7 +107,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="advantages__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <h3 class="advantages__title">Увага до деталей</h3>
               <p class="advantages__paragraph">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
@@ -118,7 +118,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="advantages__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <h3 class="advantages__title">Пунктуальність</h3>
               <p class="advantages__paragraph">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
@@ -129,7 +129,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="advantages__title">ПЛАНУВАННЯ</h3>
+              <h3 class="advantages__title">Планування</h3>
               <p class="advantages__paragraph">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
@@ -140,7 +140,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="advantages__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <h3 class="advantages__title">Сучасні технології</h3>
               <p class="advantages__paragraph">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
@@ -148,46 +148,76 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="services section">
+      <section class="services section">
         <div class="container">
           <h2 class="services__title">Чим ми займаємося</h2>
           <ul class="services__list">
             <li class="services__item">
               <a href="">
-                <img
-                  class="services__img"
-                  src="./images/desktop.jpg"
-                  alt="Десктопні програми"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    class="services__img"
+                    srcset="
+                      ./images/desktop-programs-desk-1x.jpg 1x,
+                      ./images/desktop-programs-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="services__img"
+                    src="./images/desktop-programs-desk-1x.jpg"
+                    alt="Десктоп"
+                    width="370"
+                  />
+                </picture>
                 <p class="services__description">Десктопні додатки</p>
               </a>
             </li>
             <li class="services__item">
               <a href="">
-                <img
-                  class="services__img"
-                  src="./images/smartphone.jpg"
-                  alt="Додатки для смартфонів"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    class="services__img"
+                    srcset="
+                      ./images/mobile-applications-desk-1x.jpg 1x,
+                      ./images/mobile-applications-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="services__img"
+                    src="./images/mobile-applications-desk-1x.jpg"
+                    alt="Мобільний телефон"
+                    width="370"
+                  />
+                </picture>
                 <p class="services__description">Мобільні додатки</p>
               </a>
             </li>
             <li class="services__item">
               <a href="">
-                <img
-                  class="services__img"
-                  src="./images/tablet.jpg"
-                  alt="Програми для планшетів"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    class="services__img"
+                    srcset="
+                      ./images/designer-solutions-desk-1x.jpg 1x,
+                      ./images/designer-solutions-desk-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="services__img"
+                    src="./images/designer-solutions-desk-1x.jpg"
+                    alt="Графічний планшет"
+                    width="370"
+                  />
+                </picture>
                 <p class="services__description">Дизайнерські рішення</p>
               </a>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="our-team section">
         <div class="container">
           <h2 class="our-team__title">Наша команда</h2>
