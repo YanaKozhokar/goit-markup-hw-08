@@ -624,19 +624,19 @@ body {
 }
 
 .our-team__card-img-container {
-  width: 450px;
-  height: 460px;
+  max-width: 450px;
+  max-height: 460px;
 }
 @media screen and (min-width: 768px) {
   .our-team__card-img-container {
-    width: 354px;
-    height: 374px;
+    max-width: 354px;
+    max-height: 374px;
   }
 }
 @media screen and (min-width: 1200px) {
   .our-team__card-img-container {
-    width: 270px;
-    height: 260px;
+    max-width: 270px;
+    max-height: 260px;
   }
 }
 
@@ -691,23 +691,35 @@ body {
 
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   color: #212121;
 }
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+  }
+}
 
 .clients__companies {
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__companies {
+    margin-top: 50px;
+  }
 }
 
 .clients__companies-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -719,6 +731,16 @@ body {
 .clients__companies-item:hover, .clients__companies-item:focus {
   fill: #2196f3;
   border: 1px solid #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .clients__companies-item {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__companies-item {
+    width: 170px;
+  }
 }
 
 .footer {
