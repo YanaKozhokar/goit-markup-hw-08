@@ -6,6 +6,7 @@
 .header {
   .container {
     display: flex;
+    align-items: center;
     height: 60px;
     @media screen and (min-width: 768px) {
       height: 80px;
@@ -121,6 +122,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40px;
+  height: 40px;
   fill: $menu-btn;
   background-color: transparent;
   border-color: transparent;
@@ -160,6 +163,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   border-color: transparent;
   margin-top: 10px;
