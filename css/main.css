@@ -1252,7 +1252,19 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.modal__label-policy::before {
+.modal__label-policy .modal__checkbox:checked + .modal__policy-text::before {
+  background-color: #2196f3;
+  border-color: #2196f3;
+  background-image: url(../images/check.svg);
+}
+
+.modal__policy-text {
+  display: flex;
+  align-items: center;
+}
+
+.modal__policy-text::before {
+  display: block;
   flex-shrink: 0;
   margin-right: 8.38px;
   content: "";
@@ -1260,11 +1272,6 @@ body {
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
-}
-.modal__label-policy .modal__checkbox:checked {
-  background-color: #2196f3;
-  border-color: #2196f3;
-  background-image: url(../images/check.svg);
 }
 
 .modal__policy-link {

@@ -159,22 +159,28 @@
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  &::before {
-    flex-shrink: 0;
-    margin-right: 8.38px;
-    content: '';
-    width: 16px;
-    height: 15px;
-    border: 2px solid $title-color;
-    border-radius: 2px;
-  }
-  .modal__checkbox:checked {
+  .modal__checkbox:checked + .modal__policy-text::before {
     background-color: $color-accent;
     border-color: $color-accent;
     background-image: url(../images/check.svg);
   }
 }
 
+.modal__policy-text {
+  display: flex;
+  align-items: center;
+}
+
+.modal__policy-text::before {
+  display: block;
+  flex-shrink: 0;
+  margin-right: 8.38px;
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid $title-color;
+  border-radius: 2px;
+}
 .modal__policy-link {
   text-decoration: underline;
   color: $color-accent;
