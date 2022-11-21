@@ -1244,7 +1244,7 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -1257,6 +1257,11 @@ body {
   border-color: #2196f3;
   background-image: url(../images/check.svg);
 }
+@media screen and (min-width: 1200px) {
+  .modal__label-policy {
+    font-size: 14px;
+  }
+}
 
 .modal__policy-text {
   display: flex;
@@ -1265,7 +1270,6 @@ body {
 
 .modal__policy-text::before {
   display: block;
-  flex-shrink: 0;
   margin-right: 8.38px;
   content: "";
   width: 16px;
