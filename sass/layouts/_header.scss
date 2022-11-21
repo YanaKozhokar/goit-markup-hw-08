@@ -78,7 +78,7 @@
 .header__contacts {
   display: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   color: $primary-text-color;
   transition-property: color;
@@ -97,6 +97,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+    font-size: 14px;
   }
 }
 
