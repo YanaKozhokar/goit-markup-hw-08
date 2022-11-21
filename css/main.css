@@ -1269,7 +1269,8 @@ body {
 }
 
 .modal__policy-text::before {
-  display: block;
+  display: flex;
+  flex-shrink: 0;
   margin-right: 8.38px;
   content: "";
   width: 16px;
